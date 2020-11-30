@@ -1,0 +1,45 @@
+/* блок наши роботы */
+
+.job-section {
+  padding-bottom: 94px;
+}
+.job-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: $black;
+}
+.job-schedule {
+  display: flex;
+  padding: 0;
+  margin: 0;
+
+  .job-item {
+    position: relative;
+
+    &:not(:last-child) {
+      margin-right: 30px;
+    }
+  }
+}
+.label {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  margin: 0;
+  display: block;
+  text-align: center;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: $light-gray;
+  background: rgba(47, 48, 58, 0.8);
+}
