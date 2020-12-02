@@ -1,16 +1,19 @@
 /* блок особенности */
 
 .features-section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  // padding-top: 94px;
+  // padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 30px;
 }
 .features-schedule {
-  display: flex;
+  // display: flex;
 
   .features-item {
-    &:not(:last-child) {
-      margin-right: 30px;
-    }
+    // text-align: center;
+    // &:not(:last-child) {
+    //   margin-right: 30px;
+    // }
     &::before {
       display: block;
       content: "";
@@ -40,10 +43,12 @@
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
+  text-align: center;
   text-transform: uppercase;
   color: $black;
 }
 .features-text {
+  margin-bottom: 30px;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
