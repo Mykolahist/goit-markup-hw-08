@@ -111,10 +111,6 @@ p {
   display: none;
 }
 
-.menu-mobile {
-  height: 60px;
-}
-
 @media screen and (max-width: 767px) {
   .menu-mobile {
     display: -webkit-box;
@@ -126,6 +122,8 @@ p {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
+    padding-top: 16px;
+    padding-bottom: 16px;
   }
 }
 
@@ -598,6 +596,36 @@ header {
   padding-bottom: 30px;
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-section {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features-schedule {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-schedule {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: -15px;
+  }
+}
+
 .features-schedule .features-item::before {
   display: block;
   content: "";
@@ -624,24 +652,49 @@ header {
   background-image: url("../images/icons/astronaut 1.svg");
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .features-schedule .features-item {
+    -ms-flex-preferred-size: calc((100% - 4 * 15px) / 2);
+        flex-basis: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features-schedule .features-item:not(:last-child) {
+    margin-right: 30px;
+  }
+}
+
 .features {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.03em;
-  text-align: center;
   text-transform: uppercase;
   color: #212121;
 }
 
+@media screen and (max-width: 767px) {
+  .features {
+    text-align: center;
+  }
+}
+
 .features-text {
-  margin-bottom: 30px;
+  margin-bottom: 0;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #757575;
+}
+
+@media screen and (max-width: 767px) {
+  .features-text {
+    margin-bottom: 30px;
+  }
 }
 
 /* блок наши роботы */
