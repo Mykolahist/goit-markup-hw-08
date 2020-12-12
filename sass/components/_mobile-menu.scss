@@ -1,0 +1,73 @@
+/* мобильное меню */
+
+.menu-btn {
+  display: inline-flex;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+
+  &:hover .icon-cross,
+  &:focus .icon-cross,
+  &:hover .icon-menu,
+  &:focus .icon-menu {
+    fill: $accent;
+  }
+  & .icon-cross {
+    display: none;
+  }
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}
+
+.menu-btn.is-open .icon-cross {
+  display: block;
+}
+
+.menu-btn.is-open .icon-menu {
+  display: none;
+}
+
+.menu-mobile {
+  @media screen and (max-width: 767px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.menu-container {
+  background-color: $white;
+
+  @media screen and (max-width: 767px) {
+    display: none;
+    position: absolute;
+    z-index: 1;
+    left: 0;
+    top: 100%;
+    width: 100%;
+    padding-top: 40px;
+    padding-bottom: 54px;
+    border-top: solid #ececec 1px;
+
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.04), 0px 2px 4px rgba(0, 0, 0, 0.08),
+      0px 1px 3px rgba(0, 0, 0, 0.16);
+
+    &.is-open {
+      display: block;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 100%;
+  }
+}
