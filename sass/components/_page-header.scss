@@ -21,22 +21,36 @@ header {
 .logo-top {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: $black;
   text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .logo {
   font-family: Raleway, sans-serif;
   font-weight: 700;
-  font-size: 26px;
-  line-height: 1.19;
+  font-size: 24px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: $accent;
   text-decoration: none;
+
+  @media screen and (min-width: 1200px) {
+    font-size: 26px;
+    line-height: 1.19;
+  }
 }
 .site-nav {
+  @media screen and (max-width: 767px) {
+    padding-bottom: 60px;
+  }
+
   @media screen and (min-width: 768px) {
     display: flex;
     margin-left: 88px;
@@ -93,17 +107,28 @@ header {
   height: 4px;
   background-color: $accent;
   border-radius: 2px;
+
+  @media screen and (max-width: 767px) {
+    bottom: 22px;
+  }
 }
 .schedule-contacts {
   @media screen and (max-width: 767px) {
     text-align: center;
     align-items: center;
-    padding-top: 32px;
+    // padding-top: 32px;
+    & li:not(:last-child) {
+      margin-bottom: 16px;
+    }
   }
 
   @media screen and (min-width: 768px) and (max-width: 1199px) {
-    padding-top: 16px;
-    padding-bottom: 16px;
+    padding-top: 21px;
+    padding-bottom: 21px;
+
+    & li:not(:last-child) {
+      margin-bottom: 10px;
+    }
   }
 
   @media screen and (min-width: 1200px) {
@@ -116,7 +141,7 @@ header {
   }
 }
 .contacts {
-  display: flex;
+  display: block;
   align-items: center;
   font-weight: 500;
   font-size: 18px;
@@ -138,9 +163,7 @@ header {
 
   @media screen and (min-width: 768px) {
     font-size: 12px;
-
-    padding-top: 5px;
-    padding-bottom: 5px;
+    line-height: 1.17;
   }
 
   @media screen and (min-width: 1200px) {
