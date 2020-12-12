@@ -26,12 +26,53 @@
 }
 .filters {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  padding-top: 94px;
-  padding-bottom: 50px;
+  flex-wrap: wrap;
 
-  .filters-item:not(:last-child) {
+  padding-top: 60px;
+  padding-bottom: 40px;
+
+  .filters-item {
     margin-right: 8px;
+    margin-top: 15px;
   }
+
+  // .filters-item:not(:last-child) {
+  //   margin-right: 8px;
+  // }
 }
+
+// .header {
+//   border-bottom: 1px solid #ececec;
+// }
+// .button {
+//   font-family: Roboto, sans-serif;
+//   font-weight: 500;
+//   font-size: 16px;
+//   line-height: 1.62;
+//   letter-spacing: 0.03em;
+//   color: $black;
+//   background-color: $light-gray;
+//   border-radius: 4px;
+//   padding: 5.76px 22.28px;
+//   border: 2px solid transparent;
+//   cursor: pointer;
+
+//   transition: color, background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+//   &:hover,
+//   &:focus {
+//     background-color: $accent;
+//     color: $white;
+//   }
+// }
+// .filters {
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+//   padding-top: 94px;
+//   padding-bottom: 50px;
+
+//   .filters-item:not(:last-child) {
+//     margin-right: 8px;
+//   }
+// }
