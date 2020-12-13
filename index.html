@@ -134,12 +134,22 @@
             <div class="container">
                 <h2 class="job-title">Чем мы занимаемся</h2>
                 <ul class="job-schedule list">
-                    <li class="job-item"><img src="./images/img1.jpg" width="370" height="294" alt="программист-работает-на-компьютере" />
-                    <div class="label">Десктопные приложения</div></li>
-                    <li class="job-item"><img src="./images/img2.jpg" width="370" height="294" alt="дизайнеры-разрабатывают-приложения-для-смартфонов" />
-                    <div class="label">Мобильные приложения</div></li>
-                    <li class="job-item"><img src="./images/img3.jpg" width="370" height="294" alt="художник-дизайнер-выбирает-цвета" />
-                    <div class="label">Дизайнерские решения</div></li>
+                    <li class="job-item">
+                        <img srcset="./images/desktop/img-1.jpg 1x, ./images/desktop/img-1@2x.jpg 2x" src="./images/desktop/img-1.jpg"
+                            width="370" height="294" alt="программист-работает-на-компьютере">
+                        <div class="label">Десктопные приложения</div>
+                    </li>
+                    <li class="job-item">
+                    <img srcset="./images/desktop/img-2.jpg 1x, ./images/desktop/img-2@2x.jpg 2x" src="./images/desktop/img-2.jpg"
+                        width="370" height="294" alt="дизайнеры-разрабатывают-приложения-для-смартфонов">
+                    <div class="label">Мобильные приложения</div>
+                    </li>
+                    
+                    <li class="job-item">
+                        <img srcset="./images/desktop/img-3.jpg 1x, ./images/desktop/img-3@2x.jpg 2x" src="./images/desktop/img-3.jpg"
+                            width="370" height="294" alt="художник-дизайнер-выбирает-цвета">
+                        <div class="label">Дизайнерские решения</div>
+                    </li>
                 </ul>
             </div>
         </section>
@@ -147,7 +157,16 @@
             <div class="container">
                 <h2 class="team-title">Наша команда</h2>
                 <ul class="team-schedule list">
-                    <li class="team-item"><img class="team-photo" src="./images/img4.jpg" width="450" height="460" alt="Product Designer" />
+                    <li class="team-item">
+                        <picture>
+                            <source srcset="./images/desktop/team-1.jpg 1x, ./images/desktop/team-1@2x.jpg 2x,"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/tablet/team-1.jpg 1x, ./images/tablet/team-1@2x.jpg 2x,"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/mobile/team-1.jpg 1x, ./images/mobile/team-1@2x.jpg 2x,"
+                                media="(max-width: 767px)" />
+                            <img src="./images/desktop/team-1.jpg" width="450" alt="Product Designer">
+                        </picture>
                         <h3 class="name">Игорь Демьяненко</h3>
                         <p class="employment" lang="en">Product Designer</p>
                         <ul class="social list">
@@ -181,7 +200,16 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="team-item"><img class="team-photo" src="./images/img5.jpg" width="450" height="460" alt="Frontend Developer" />
+                    <li class="team-item">
+                        <picture>
+                            <source srcset="./images/desktop/team-2.jpg 1x, ./images/desktop/team-2@2x.jpg 2x,"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/tablet/team-2.jpg 1x, ./images/tablet/team-2@2x.jpg 2x,"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/mobile/team-2.jpg 1x, ./images/mobile/team-2@2x.jpg 2x,"
+                                media="(max-width: 767px)" />
+                            <img src="./images/desktop/team-2.jpg" width="450" alt="Frontend Developer">
+                        </picture>
                         <h3 class="name">Ольга Репина</h3>
                         <p class="employment" lang="en">Frontend Developer</p>
                         <ul class="list social">
@@ -215,7 +243,16 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="team-item"><img class="team-photo" src="./images/img6.jpg" width="450" height="460" alt="Marketing" />
+                    <li class="team-item">
+                        <picture>
+                            <source srcset="./images/desktop/team-3.jpg 1x, ./images/desktop/team-3@2x.jpg 2x,"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/tablet/team-3.jpg 1x, ./images/tablet/team-3@2x.jpg 2x,"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/mobile/team-3.jpg 1x, ./images/mobile/team-3@2x.jpg 2x,"
+                                media="(max-width: 767px)" />
+                            <img src="./images/desktop/team-3.jpg" width="450" alt="Marketing">
+                        </picture>
                         <h3 class="name">Николай Тарасов</h3>
                         <p class="employment" lang="en">Marketing</p>
                         <ul class="list social">
@@ -249,7 +286,16 @@
                             </li>
                         </ul>
                     </li>
-                    <li class="team-item"><img class="team-photo" src="./images/img7.jpg" width="450" height="460" alt="UI Designer" />
+                    <li class="team-item">
+                        <picture>
+                            <source srcset="./images/desktop/team-4.jpg 1x, ./images/desktop/team-4@2x.jpg 2x,"
+                                media="(min-width: 1200px)" />
+                            <source srcset="./images/tablet/team-4.jpg 1x, ./images/tablet/team-4@2x.jpg 2x,"
+                                media="(min-width: 768px)" />
+                            <source srcset="./images/mobile/team-4.jpg 1x, ./images/mobile/team-4@2x.jpg 2x,"
+                                media="(max-width: 767px)" />
+                            <img src="./images/desktop/team-4.jpg" width="450" alt="UI Designer">
+                        </picture>
                         <h3 class="name">Михаил Ермаков</h3>
                         <p class="employment" lang="en">UI Designer</p>
                         <ul class="list social">
@@ -337,9 +383,8 @@
         </section>
     </main>
     <footer id="contacts" class="footer">
-        <div class="container">
-            <div class="footer-general">
-                <div class="footer-pack">
+        <div class="container footer-general">
+            <div class="footer-pack">
                     <a class="logo" href="./index.html">Web<span class="logo-bottom">Studio</span></a>
                     <address class="address-flexbox">
                         <p class="location">г. Киев, пр-т Леси Украинки, 26</p>
@@ -376,22 +421,18 @@
                         </li>
                     </ul>
                 </div>
-            </div>
-        
-            <div class="tablet-subscription">
-                <div class="subscription">
-                    <form autocomplete="off">
-                        <p class="subscription-title">подпишитесь на рассылку</p>
-                        <div class="subscription-area">
-                            <input class="subscription-input" type="mail" name="email" placeholder="E-mail" />
-                            <button class="subscription-btn">Подписаться
-                                <svg class="icon-send" width="24" height="24">
-                                    <use href="./images/sprite.svg#icon-send"></use>
-                                </svg>
-                            </button>
-                        </div>
-                    </form>
-                </div>
+            <div class="subscription">
+                <form autocomplete="off">
+                    <p class="subscription-title">подпишитесь на рассылку</p>
+                    <div class="subscription-area">
+                        <input class="subscription-input" type="mail" name="email" placeholder="E-mail" />
+                        <button class="subscription-btn">Подписаться
+                            <svg class="icon-send" width="24" height="24">
+                                <use href="./images/sprite.svg#icon-send"></use>
+                            </svg>
+                        </button>
+                    </div>
+                </form>
             </div>
         </div>
     </footer>
