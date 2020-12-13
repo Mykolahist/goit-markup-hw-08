@@ -1,8 +1,8 @@
 /* блок наши роботы */
 
-@media screen and (max-width: 1199px) {
-  .job-section {
-    padding-bottom: 94px;
+.job-section {
+  padding-bottom: 94px;
+  @media screen and (max-width: 1199px) {
     display: none;
   }
 }
