@@ -1,6 +1,8 @@
 /* подвал */
 
 footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: $dark-gray;
 }
 .footer {
@@ -137,7 +139,7 @@ footer .logo {
 //   justify-content: flex-end;
 // }
 .subscription-input {
-  // display: flex;
+  display: flex;
   // flex-direction: column;
   // width: 358px;
   width: 100%;
@@ -163,7 +165,7 @@ footer .logo {
 }
 .subscription-btn {
   position: relative;
-  // display: block;
+  display: block;
   // display: flex;
   // justify-content: center;
   width: 200px;
