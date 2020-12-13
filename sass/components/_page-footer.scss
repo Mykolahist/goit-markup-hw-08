@@ -26,6 +26,11 @@ footer .logo {
 }
 .footer-general {
   text-align: center;
+
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: space-around;
+  }
   // display: flex;
   // flex-direction: column;
   // justify-content: center;
