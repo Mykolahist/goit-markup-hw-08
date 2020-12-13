@@ -1070,7 +1070,13 @@ footer {
 
 footer .logo {
   display: block;
-  padding: 16px 0px;
+  text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  footer .logo {
+    padding: 16px 0px;
+  }
 }
 
 .logo-bottom {
@@ -1078,6 +1084,7 @@ footer .logo {
   font-weight: 700;
   font-size: 24px;
   line-height: 1.17;
+  text-align: center;
   letter-spacing: 0.03em;
   color: #ffffff;
   text-decoration: none;
