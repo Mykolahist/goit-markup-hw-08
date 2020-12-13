@@ -139,17 +139,17 @@ footer .logo {
   justify-content: flex-end;
 }
 .subscription-input {
-  display: flex;
-  flex-direction: column;
+  // display: flex;
+  // flex-direction: column;
   width: 450px;
 
   // width: 358px;
-  width: 100%;
+  // width: 100%;
   height: 50px;
   left: 815px;
   top: 2785px;
-  // margin-left: auto;
-  // margin-right: auto;
+  margin-left: auto;
+  margin-right: auto;
   padding: 15px 16px;
   margin-bottom: 20px;
   color: $white;
